@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head> 
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ProPilot</title>
+  <title>ProPilot | Flight Performance Toolkit</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="style/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <h1>Welcome to ProPilot</h1>
-  <p>Your copilot for flight performance planning.</p>
 
-  <script src="script/main.js"></script>
+  <!-- Header -->
+  <header class="navbar">
+    <nav>
+      <img src="assets/images/logo.png" alt="ProPilot Logo" class="logo-icon">
+      <span class="brand-name">ProPilot</span>
+    </nav>
+    <nav class="nav-links">
+      <a href="performance.html">Performance</a>
+      <a href="metar.html">METAR</a>
+      <a href="checklists.html">Checklists</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1 class="hero-title">Your Virtual Flight Deck Assistant</h1>
+    <p class="hero-subtitle">
+      ProPilot helps you calculate, plan, and execute flights like a professional.
+    </p>
+    <a href="performance.html" class="hero-button">
+      Start Planning
+    </a>
+  </section>
+
+  <!-- Feature Grid -->
+  <section class="features">
+    <div class="feature-card">
+      <img src="https://placehold.co/120x120?text=Takeoff" alt="Takeoff" class="mx-auto mb-4 rounded">
+      <h3 class="text-xl font-bold mb-2">Takeoff / Landing Performance</h3>
+      <p>Calculate performance based on aircraft specs, runway length, weather, and weight.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://placehold.co/120x120?text=Fuel Planner" alt="Fuel" class="mx-auto mb-4 rounded">
+      <h3>Fuel Planner</h3>
+      <p>Plan fuel based on flight time, reserves, taxi, and alternate requirements.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://placehold.co/120x120?text=Weight" alt="Weight" class="mx-auto mb-4 rounded">
+      <h3>Weight & Balance</h3>
+      <p>Calculate center of gravity, payload, and validate against aircraft limitations.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://placehold.co/120x120?text=Weather" alt="METAR" class="mx-auto mb-4 rounded">
+      <h3>METAR / TAF Fetcher</h3>
+      <p>Get real-time weather for your departure, destination, and alternates.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://placehold.co/120x120?text=Checklists" alt="Checklists" class="mx-auto mb-4 rounded">
+      <h3>Aircraft Checklists</h3>
+      <p>Browse or generate aircraft-specific checklists for any phase of flight.</p>
+    </div>
+    <div class="feature-card">
+      <img src="https://placehold.co/120x120?text=Export Plan" alt="Export" class="mx-auto mb-4 rounded">
+      <h3>Export to PDF</h3>
+      <p>Generate clean, printable PDFs of your full flight plan and performance data.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 ProPilot by Kheder Mohamed • <a href="https://github.com/off-s1de/ProPilot" target="_blank">GitHub</a><br>
+    Inspired by real-world aviation. Built for precision and performance.
+  </footer>
+
 </body>
 </html>

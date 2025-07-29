@@ -1,10 +1,145 @@
+/* main.css */
 body {
-  font-family: Arial, sans-serif;
-  margin: 2rem;
-  background-color: #f4f8fb;
-  color: #333;
+  background-color: #1d1f2b;
+  color: #e0e2e7;
+  font-family: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+  line-height: 1.6;
 }
 
-h1 {
-  color: #00509e;
+/* Header */
+.navbar {
+  background-color: #12131a;
+  color: #f1f3f5;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #2e313d;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.logo-icon {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.brand-name {
+  font-family: "Boeing Sans", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #d1d5db;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #3b82f6;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  padding: 6rem 2rem;
+  color: #e5e7eb;
+  text-align: center;
+  background: 
+    linear-gradient(to bottom, rgba(15, 20, 35, 0.15), rgba(15, 15, 30, 0.15)),
+    linear-gradient(to left, rgba(15, 20, 35, 0.35), rgba(15, 15, 30, 0.25)),
+    url('../assets/images/avionics-ex.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 1px solid #3b3b50;
+  border-bottom: 1px solid #3b3b50;
+  z-index: 1;
+}
+
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #9ca3af;
+  margin-bottom: 2rem;
+}
+
+.hero-button {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #1e40af;
+}
+
+/* Features */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.feature-card {
+  background-color: #2f3144;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #f3f4f6;
+}
+
+.feature-card p {
+  color: #cbd5e1;
+  font-size: 0.85rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  color: #9ca3af;
+  font-size: 0.875rem;
+  padding: 2rem;
+  border-top: 1px solid #3a3b4c;
+}
+
+.footer a {
+  color: #60a5fa;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
